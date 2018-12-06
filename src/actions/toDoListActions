@@ -7,7 +7,6 @@ export function fetchBlogPosts() {
     }).then(res => res.json())
         .catch(err => err);
 }
-
 export function fetchBlogPost(id) {
     return fetch('http://api.symfony-3.dev/app_dev.php/posts/' + id, {
         method: 'GET',
