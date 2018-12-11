@@ -14,7 +14,7 @@ class Mylist extends Component {
         this._onButtonClick = this._onButtonClick.bind(this);
     }
     componentDidMount() {
-        fetch('http://localhost:8080/hello2')
+        fetch('http://localhost:8080/getlist')
             .then(res => res.json())
             .then(json => {
                 setTimeout(() => {
